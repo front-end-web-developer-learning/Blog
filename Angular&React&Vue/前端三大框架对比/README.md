@@ -156,9 +156,9 @@ Angular 使用双向绑定即：界面的操作能实时反映到数据，数据
 
    复杂的应用里可以选择
 
-   1. 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render；
+   * 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render；
 
-   2. Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。
+   * Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。
 
       其实也不是那么简单的。相比之下， Vue 由于采用 依赖追踪 ，默认就是优化状态： 动了多少数据，就触发多少更新，不多也不少 。React 和 Angular 2 都有服务端渲染和原生渲染的功能。 Vue.js 不使用 Virtual DOM 而是 使用真实 DOM 作为模板，数据绑定到真实节点 。Vue.js 的应用环境必须提供 DOM。 Vue.js 有时性能会比 React 好 ，而且几乎不用手工优化。   
 
